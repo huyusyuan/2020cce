@@ -21,9 +21,8 @@ int main()
    return 0;
 } //end main
 ```
-```C
 ## 第二個程式
-
+```C
 #include < stdio.h>
 int main()
 {
