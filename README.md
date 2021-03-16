@@ -2,7 +2,7 @@
 程式碼倉庫
 
 
-## 第一個程式
+## 第一個程式 
 
 ```c
 #include < stdio.h>
@@ -21,7 +21,7 @@ int main()
    return 0;
 } //end main
 ```
-## 第二個程式
+## 第二個程式 
 ```C
 #include < stdio.h>
 int main()
@@ -123,8 +123,8 @@ int main()
 
 因為 P= &n1 的關係 所以要把200框起來然後指向N1的地方以外
 因為 P2=&n3 的關係 所以要把300框起來然後指向N1的地方
-## 第三個程式
 
+## 第三個程式
 ```C
 #include<stdio.h>
 int main()
@@ -154,7 +154,7 @@ int main()
 
 ### 20210316 Hi there 👋
 
-## 第一個程式
+## 第一個程式 讀入整數反序列印
 ```C
 #include <stdio.h>
 
@@ -177,5 +177,116 @@ for(int i=N-1; i>=0; i--){
 }
 ```
 
-## 第二個程式
+## 第二個程式 大小寫轉換
+```C
+#include <stdio.h>
+int main()
+{
+	char c[10];
+	
+	scanf("%s",&c);
+	int i=0;
+	while(c[i]!='\0')
+	{
+		if('A'<=c[i] && c[i]<='Z')
+			printf("%c",c[i]-'A'+'a');
+		else if('a'<=c[i] && c[i]<='z')
+			printf("%c",c[i]-'a'+'A');
+		else printf("%c",c[i]); 
+		i++;
+	}
+	printf("\n");
+}
+```
 
+## 第三個程式 計算幾週與幾天
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	
+	printf("%d %d\n",n/7,n%7);
+}
+```
+
+## 第四個程式 計程車資計算
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	
+	if(n<2000) printf("100");
+	else if(n>2000 && n%500==0)printf("%d",100+(n-2000)/500*5);
+	else printf("%d",100+(n-2000)/500*5+5);
+	printf("\n");
+}
+```
+
+## 第五個程式 兩數間可被5整除的整數
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b,ans=0;
+	scanf("%d%d",&a,&b);
+	if(a<b)
+	{
+		for(int i=a;i<=b;i++)
+		{
+			if(i%5==0)
+			
+			printf("%d\n",i);	
+		}
+	}
+	if(a>b)
+	{
+		for(int i=b;i<=a;i++)
+		{
+			if(i%5==0)
+			
+			printf("%d\n",i);	
+		}
+	}
+
+}
+```
+
+## 第六個程式 整數間最大距離
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b,c;
+	scanf("%d%d%d",&a,&b,&c);
+	
+	if(a>b && b>c) printf("%d",a-c);
+	else if(a>c && c>b) printf("%d",a-b);
+	else if(b>a && a>c) printf("%d",b-c);
+	else if(b>c && c>a) printf("%d",b-a);
+	else if(c>a && a>b) printf("%d",c-b);
+	else printf("%d",c-a);
+	printf("\n");
+}
+```
+## 第七個程式 計算陣列的平方值
+```C
+#include <stdio.h>
+int a[10];
+int main()
+{
+	int n,ans=0;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+		ans=a[i]*a[i];
+		printf("%d,",ans);
+	}
+	printf("\n");
+	
+}
+```
