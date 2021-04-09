@@ -372,7 +372,8 @@ int main()
 }
 ```
 
-##0409
+## 0409
+```C
 #include <string.h>
 #include <stdlib.h>
 //char line[100][10];
@@ -399,3 +400,4 @@ int main()
         printf("%s\n", line[i]);
     }
 }
+```
