@@ -556,3 +556,28 @@ int main()
   }
   
   ```
+
+## 0528程式
+```C
+//大樂透 抽獎時 會掉下球
+//int []a={1,2,3,4,5,6,7,8,9,10.
+int []a = new int[49];
+void setup(){
+   size(400,200);
+   textSize(30);
+   for(int i=0; i<49; i++) a[i]= i+1;
+}
+void draw(){
+  background(#2C9CF0);
+   for(int i=0; i<6; i++){
+    fill(255); ellipse(50+i*50, 100, 40 ,40);
+     textAlign(CENTER,CENTER);//對齊文字
+     fill(0); text( a[i], 50+i*50, 100);
+   }
+}
+void mousePressed(){
+  for( int i=0; i<10000; i++){
+   int i1= (int) random(49), i2=(int)random(49);
+   int temp =a[i1];a[i1]=a[i2];a[i2]=temp;
+  }}
+  ```
