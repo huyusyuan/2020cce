@@ -581,3 +581,31 @@ void mousePressed(){
    int temp =a[i1];a[i1]=a[i2];a[i2]=temp;
   }}
   ```
+
+## 0604 第一個程式
+```C
+void setup(){
+  size(400,200);
+  textSize(40);//字體大小
+}
+void draw(){
+  background(441,199,207);//背景顏色
+  int s=second();
+  text(s,100,100);//數字倒數
+  }
+  ```
+  
+  ## 0604 第二個程式
+ ```C
+ function setup(){//設定只做一次
+ createCanvas(400,200);
+}
+function draw(){//畫圖每秒60frame
+let s = second();//0...59秒
+if( s%2==0){
+background(255,0,0);
+}else{
+background(58,114,191);
+}
+}
+```
