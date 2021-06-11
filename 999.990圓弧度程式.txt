@@ -1,0 +1,19 @@
+999.990圓弧度程式
+void setup(){
+  size(400,200);
+  fill(221,123,185);
+  textSize(40);
+}
+float shift=0, v=10;
+void draw(){
+  background(57,255,172);
+  float start = radians(90+shift);
+  float stop = radians(180+shift);
+  arc(100,100, 180,180, start ,stop);
+  if(v>0.0001){
+    shift+=v;
+    v = v*0.99;
+  }
+  text(shift,200,100);
+  text(v,200,150);
+}
