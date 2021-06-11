@@ -625,3 +625,20 @@ void draw(){ //畫 每秒60次
   arc(100,100, 180,180,0,stop);
 }//畫圓 圓心 寬 高
 ```
+## 算出圓的弧度
+```C
+void setup(){
+  size(400,200);
+  fill(221,123,185);
+  textSize(40);
+}
+int degree=0;
+void draw(){
+  background(57,255,172);
+  float stop = radians(degree);//弧度 徑度
+  text( degree,200,100);//360度 航海
+  text(stop ,200,150);
+  arc(100,100, 180,180,0,stop);
+  if(mousePressed) degree++;
+}
+```
