@@ -609,3 +609,19 @@ background(58,114,191);
 }
 }
 ```
+
+## 20200611 劃出圓的弧度
+```C
+void setup(){
+  size(400,200);
+}
+void draw(){ //畫 每秒60次
+  background(57,255,172); //RGB三色
+  fill(221,123,185);
+  ellipse(100,100, 180,180);
+  fill(255);
+  float stop =mouseX/50.0;
+  text(stop,200,100);
+  arc(100,100, 180,180,0,stop);
+}//畫圓 圓心 寬 高
+```
