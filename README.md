@@ -642,3 +642,20 @@ void draw(){
   if(mousePressed) degree++;
 }
 ```
+## 隨著角度旋轉的圓弧
+```C
+void setup(){
+  size(400,200);
+  fill(221,123,185);
+  textSize(40);
+}
+float shift=0;
+void draw(){
+  background(57,255,172);
+  //float start = radians(90+mouseX);
+  //float stop = radians(180+mouseX);
+  float start = radians(90+shift);
+  float stop = radians(180+shift);
+  arc(100,100, 180,180, start ,stop);
+  shift+=1;
+}
