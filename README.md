@@ -759,3 +759,21 @@ void draw(){
 }
 }
 ```
+
+## 20210618 第一個程式
+```C
+void setup(){
+  size(400,200);
+  textSize(40);
+}
+String line ="";
+String Q = "hello";
+void draw(){
+  background(251,137,34);
+  text("Q:  "+Q,     100,100);
+  text("You:"+line,  100,150);
+  }
+  void mousePressed(){
+    line=line+"a";
+}
+```
